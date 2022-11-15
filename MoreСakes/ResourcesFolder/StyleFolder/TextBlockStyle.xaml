@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="TextBlock" x:Key="TextBlockStyle">
+        <Setter Property="Foreground" Value="#E4C08A"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="0 0 10 0"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="\ResourcesFolder\FontFolder\#Rubik Bubbles"/>
+    </Style>
+    <Style x:Key="NameAppTextBlock" TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}">
+        <Setter Property="Text" Value="MORE-CAKES"/>
+        <Setter Property="Margin" Value="10 0 0 0"/>
+        <Setter Property="FontSize" Value="18"/>
+    </Style>
+    <Style x:Key="TextIsButton" TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="0 10 0 0"/>
+    </Style>
+    <Style x:Key="TitleTextBlock" TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Foreground" Value="#E4E4E6"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Width" Value="400"/>
+        <Setter Property="Margin" Value="0 50 0 0"/>
+    </Style>
+</ResourceDictionary>

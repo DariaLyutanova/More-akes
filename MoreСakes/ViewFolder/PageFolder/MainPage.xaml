@@ -1,0 +1,75 @@
+﻿<Page x:Class="MoreСakes.ViewFolder.PageFolder.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MoreСakes.ViewFolder.PageFolder"
+      mc:Ignorable="d" 
+      Style="{StaticResource MainPage}">
+
+    <StackPanel Style="{StaticResource StackStackPanel}">
+        <Button
+            Margin="0 0 0 20"
+            Style="{StaticResource ButtonUC}">
+            <Grid Width="820">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Style="{StaticResource ButtonImage}"
+                    Source="\ResourcesFolder\ImageFolder\OurСakes.jpeg"/>
+                <Grid Grid.Column="1">
+                    <TextBlock 
+                    Style="{StaticResource TextIsButton}"
+                    Text="НАШИ ТОРЫ"/>
+                    <TextBlock 
+                    Style="{StaticResource TitleTextBlock}"
+                    Text="ТОРТЫ, КОТОРЫЕ ПРИГОТОВИЛИ НАШИ ПОВАРА СПЕЦИАЛЬНО ДЛЯ СЛАДКОЕЖЕК"/>
+                </Grid>
+            </Grid>
+        </Button>
+        <Button 
+            Margin="0 20 0 20"
+            Style="{StaticResource ButtonUC}">
+            <Grid Width="820">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Style="{StaticResource ButtonImage}"
+                    Source="\ResourcesFolder\ImageFolder\OnHoliday.jpg"/>
+                <Grid Grid.Column="1">
+                    <TextBlock 
+                    Style="{StaticResource TextIsButton}"
+                    Text="ТОРЫ НА ПРАЗДНИК"/>
+                    <TextBlock 
+                    Style="{StaticResource TitleTextBlock}"
+                    Text="ТОРТЫ, СПЕЦИАЛЬНО ПРИГОТОВЛЕННЫЕ ДЛЯ ПРАЗДНИЧНЫХ ДНЕЙ, ТАКИЕ КАК НОВЫЙ ГОД, ДЕНЬ РОЖДЕНИЕ, СВАДЬБА И Т.Д."/>
+                </Grid>
+            </Grid>
+        </Button>
+        <Button 
+            Margin="0 20 0 0"
+            Style="{StaticResource ButtonUC}">
+            <Grid Width="820">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image 
+                    Style="{StaticResource ButtonImage}"
+                    Source="\ResourcesFolder\ImageFolder\CollectYour.jpg"/>
+                <Grid Grid.Column="1">
+                    <TextBlock 
+                    Style="{StaticResource TextIsButton}"
+                    Text="СОБРАТЬ СВОЙ ТОРТ"/>
+                    <TextBlock 
+                    Style="{StaticResource TitleTextBlock}"
+                    Text="ВЫ МОЖИТЕ ВЫБРАТЬ КОМПОНЕНТЫ, КОТОРЫЕ БУДУТ ИСПОЛЬЗОВАТЬСЯ В ВАШЕМ ТОРТЕ И НАШИ ПОВАРА ПРИГОТОВЯТ ЕГО"/>
+                </Grid>
+            </Grid>
+        </Button>
+    </StackPanel>
+</Page>

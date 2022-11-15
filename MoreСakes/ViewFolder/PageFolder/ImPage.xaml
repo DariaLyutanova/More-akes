@@ -1,0 +1,78 @@
+﻿<Page x:Class="MoreСakes.ViewFolder.PageFolder.ImPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MoreСakes.ViewFolder.PageFolder"
+      mc:Ignorable="d" 
+      Style="{StaticResource MainPage}">
+    <Grid>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50 50 50 0" Style="{StaticResource StackStackPanel}">
+            <TextBlock
+                Margin="0 0 0 10"
+                Style="{StaticResource TextBlockStyle}"
+                TextWrapping="Wrap"
+                Text="«MoreСakes» — крупная сеть кулинарий в Москве. Сейчас в проекте более 200 сотрудников, но начиналась история в 2000 году с небольшой команды, гастрономического энтузиазма и мечты накормить город вкусными тортами. Банальность в планы не входила: нашей целью всегда был необычный концепт. Повезло: путешествуя в поисках идей, мы оказались на одной из красноярских выставок. Где и познакомились с Ясосу Бибу, японцем и пекарем в третьем поколении. Он приехал в Россию, научил нас работать с разными видами выпички, помог основать кондитерское производство. И названа кулинария в честь вкусных тортов. Пилотное заведение мы открыли в формате магазина. Утонченная подача, атмосфера маленькой европейской кондитерской, вежливость и внимательность персонала ценились не меньше, чем качество продуктов. Уже тогда мы готовили пряности, торты и десерты не только традиционными, но и совершенно новыми для города способами."/>
+            <StackPanel Margin="0 30 0 0" Style="{StaticResource StackStackPanel}" HorizontalAlignment="Left">
+            <TextBlock
+                Style="{StaticResource TextBlockStyle}"
+                TextWrapping="Wrap"
+                Text="НАШИ КОНТАКТЫ:"/>
+            <StackPanel HorizontalAlignment="Left" Margin="0 10 0 0" Orientation="Horizontal" Style="{StaticResource StackStackPanel}">
+                <TextBlock
+                    Margin="0 0 5 0"
+                    Style="{StaticResource TextBlockStyle}"
+                    TextWrapping="Wrap"
+                    Text="НОМЕР ТЕЛЕФОНА"/>
+                <TextBlock
+                    Margin="5 0 0 0"
+                    Style="{StaticResource TextBlockStyle}"
+                    TextWrapping="Wrap"
+                    Text="88005553535"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Margin="0 10 0 0" Orientation="Horizontal" Style="{StaticResource StackStackPanel}">
+                    <TextBlock
+                        Margin="0 0 5 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="TELEGRAM"/>
+                    <TextBlock
+                        Margin="5 0 0 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="88005553535"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Margin="0 10 0 0" Orientation="Horizontal" Style="{StaticResource StackStackPanel}">
+                    <TextBlock
+                        Margin="0 0 5 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="САЙТ"/>
+                    <TextBlock
+                        Margin="5 0 0 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="https://vk.com/id684242880"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Margin="0 10 0 0" Orientation="Horizontal" Style="{StaticResource StackStackPanel}">
+                    <TextBlock
+                        Margin="0 0 5 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="ВРЕМЯ РАБОТЫ"/>
+                    <TextBlock
+                        Margin="5 0 0 0"
+                        Style="{StaticResource TextBlockStyle}"
+                        TextWrapping="Wrap"
+                        Text="ПН-ПТ с 09:00 до 15:50"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Image
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            Margin="0 0 50 50"
+            Height="300"
+            Source="\ResourcesFolder\ImageFolder\QRCode.png"/>
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Application x:Class="MoreСakes.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MoreСakes"
+             StartupUri="\ViewFolder\WindowFolder\EntranceWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\WindowStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\GridStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\BorderStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\StackPanelStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\ButtonStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\TextBlockStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\ImageStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\PageStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\FrameStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\TextBoxStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\PasswordboxStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\ToggleButtonStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
