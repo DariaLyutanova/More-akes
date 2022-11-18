@@ -18,6 +18,7 @@
                 <ResourceDictionary Source="\ResourcesFolder\StyleFolder\TextBoxStyle.xaml"/>
                 <ResourceDictionary Source="\ResourcesFolder\StyleFolder\PasswordboxStyle.xaml"/>
                 <ResourceDictionary Source="\ResourcesFolder\StyleFolder\ToggleButtonStyle.xaml"/>
+                <ResourceDictionary Source="\ResourcesFolder\StyleFolder\ScrollViewerStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

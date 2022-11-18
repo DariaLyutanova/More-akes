@@ -1,4 +1,5 @@
 ﻿using MoreСakes.AppDataFolder.ClassFolder;
+using MoreСakes.ViewFolder.WindowFolder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +22,29 @@ namespace MoreСakes.ViewFolder.PageFolder
         public RegistrationPage()
         {
             InitializeComponent();
+            if (PersonalDataCheckBox.IsChecked == true)
+            {
+                RegistrationButton.IsEnabled = true;
+                RegistrationButton.BorderBrush = Brushes.White;
+                RegistrationButton.Foreground = Brushes.White;
+            }
+            else
+            {
+                RegistrationButton.IsEnabled = false;
+                RegistrationButton.BorderBrush = Brushes.Gray;
+                RegistrationButton.Foreground = Brushes.Gray;
+            }
         }
 
         private void NextHyperlink_Click(object sender, RoutedEventArgs e)
         {
             FrameClass.AutRegiFrameClass.Navigate(new AuthorizationPage());
+        }
+
+        private void PersonalDataHyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            PersonalDataWindow personalDataWindow = new PersonalDataWindow();
+            personalDataWindow.ShowDialog();
         }
     }
 }

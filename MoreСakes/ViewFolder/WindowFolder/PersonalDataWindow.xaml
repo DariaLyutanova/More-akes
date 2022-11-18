@@ -1,0 +1,92 @@
+﻿<Window x:Class="MoreСakes.ViewFolder.WindowFolder.PersonalDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoreСakes.ViewFolder.WindowFolder"
+        mc:Ignorable="d" Height="300" Width="620"
+        Style="{StaticResource WindowsStyle}"
+        Title="ОКНО: ПЕРСОНАЛЬНЫЕ ДАННЫЕ"
+        WindowStartupLocation="CenterScreen">
+    <Border BorderBrush="red" BorderThickness="2">
+        <Grid Style="{StaticResource ColorGrid}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Background="Transparent" x:Name="SpaseBarGrid" MouseDown="SpaseBarGrid_MouseDown">
+                <Border Style="{StaticResource UpperPonelBorder}"/>
+                <StackPanel Style="{StaticResource ControlStyleStackPanel}">
+                    <Button
+                        x:Name="RollUpButton"
+                        Click="RollUpButton_Click"
+                        Style="{StaticResource RollupControlButton}"/>
+                    <Button
+                        x:Name="CloseButton"
+                        Click="CloseButton_Click"
+                        Style="{StaticResource CloseControlButton}"/>
+                </StackPanel>
+                <StackPanel Style="{StaticResource NameAppStackPanel}">
+                    <Image Style="{StaticResource IconAppImage}"/>
+                    <TextBlock Style="{StaticResource NameAppTextBlock}"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ScrollViewer>
+                    <TextBlock
+                        TextWrapping="Wrap"
+                        Style="{StaticResource TextBlockStyle}"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left"
+                        Margin="20"
+                        Text="Пользовательское Соглашение
+                            Настоящее Пользовательское Соглашение (Далее Соглашение) регулирует отношения между владельцем https://vk.com/id684242880 (далее MoreСakes или Администрация) с одной стороны и пользователем сайта с другой.
+                            Сайт MoreСakes не является средством массовой информации.
+
+                            Используя сайт, Вы соглашаетесь с условиями данного соглашения.
+                            Если Вы не согласны с условиями данного соглашения, не используйте сайт MoreСakes!
+
+                            Права и обязанности сторон
+                            Пользователь имеет право:
+                            - осуществлять поиск информации на сайте
+                            - получать информацию на сайте
+                            - создавать информацию для сайта
+                            - требовать от администрации скрытия любой информации о пользователе
+                            - использовать информацию сайта в личных некоммерческих целях
+                            - использовать информацию сайта в коммерческих целях с разрешения Администрации
+
+                            Администрация имеет право:
+                            - по своему усмотрению и необходимости создавать, изменять, отменять правила
+                            - ограничивать доступ к любой информации на сайте
+                            - создавать, изменять, удалять информацию
+                            - удалять учетные записи
+                            - отказывать в регистрации без объяснения причин
+
+                            Пользователь обязуется:
+                            - обеспечить достоверность предоставляемой информации
+                            - обеспечивать сохранность личных данных от доступа третьих лиц
+                            - обновлять Персональные данные, предоставленные при регистрации, в случае их изменения
+                            - не нарушать работоспособность сайта
+                            - не использовать скрипты (программы) для автоматизированного сбора информации и/или взаимодействия с Сайтом и его Сервисами
+
+                            Администрация обязуется:
+                            - поддерживать работоспособность сайта за исключением случаев, когда это невозможно по независящим от Администрации причинам.
+
+                            Ответственность сторон
+                            - пользователь лично несет полную ответственность за распространяемую им информацию
+                            - администрация не несет никакой ответственности за достоверность информации, скопированной из других источников
+                            - администрация не несёт ответственность за несовпадение ожидаемых Пользователем и реально полученных услуг
+                            - администрация не несет никакой ответственности за услуги, предоставляемые третьими лицами
+                            - в случае возникновения форс-мажорной ситуации (боевые действия, чрезвычайное положение, стихийное бедствие и т. д.) Администрация не гарантирует сохранность информации, размещённой Пользователем, а также бесперебойную работу информационного ресурса
+
+                            Условия действия Соглашения
+                            Данное Соглашение вступает в силу при регистрации на сайте.
+                            Соглашение перестает действовать при появлении его новой версии.
+                            Администрация оставляет за собой право в одностороннем порядке изменять данное соглашение по своему усмотрению.
+                            Администрация не оповещает пользователей об изменении в Соглашении."/>
+                    <!--!!!Этот текст потом будем выгружать из БД, да, так удобней и легче, помимо всего, ещё и проше!!!-->
+                </ScrollViewer>   
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
